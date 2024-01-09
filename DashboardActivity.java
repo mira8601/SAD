@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
 
     ImageView attendance, classes, card, med, academic, financial, cocur, help, hotline, bus,
             news1, news2, event1, event2, event3;
+
+    TextView news;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class DashboardActivity extends AppCompatActivity {
         event1 = findViewById(R.id.imgEvent1);
         event2 = findViewById(R.id.event2);
         event3 = findViewById(R.id.event3);
+        news = findViewById(R.id.news_text);
 
         attendance.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,42 +117,10 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        news1.setOnClickListener(new View.OnClickListener() {
+        news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        news2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        event1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        event2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        event3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, NewsActivity.class);
                 startActivity(intent);
             }
         });
