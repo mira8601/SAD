@@ -1,5 +1,9 @@
 # SAD
 
+### Modules done:
+1. Student
+2. 
+
 ### Completed Functional activities:
 1. Login, register, forgot password
 2. Dashboard
