@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NewsActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/border"
+        android:hint="Type to search..."
+        app:queryBackground="@android:color/transparent"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/btnAll"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="All"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintVertical_bias="0"/>
+
+    <Button
+        android:id="@+id/btnSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lightGrey"
+        android:text="Sports"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@id/btnAll"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintVertical_bias="0"/>
+
+    <Button
+        android:id="@+id/btnAcademic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lightGrey"
+        android:text="Academic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@id/btnSports"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintVertical_bias="0"/>
+
+    <Button
+        android:id="@+id/btnEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lightGrey"
+        android:text="Events"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@id/btnAcademic"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/latestNews_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Latest news"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAll"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgAllNews1"
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:outlineSpotShadowColor="@color/grey"
+        android:src="@drawable/allnews1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/latestNews_text"
+        app:layout_constraintVertical_bias="0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imgAllNews2"
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:outlineSpotShadowColor="@color/grey"
+        android:src="@drawable/allnews2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/latestNews_text"
+        app:layout_constraintVertical_bias="0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

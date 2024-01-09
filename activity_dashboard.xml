@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".DashboardActivity">
 
     <ImageView
@@ -170,6 +171,7 @@
         android:id="@+id/cardView2"
         android:layout_width="380dp"
         android:layout_height="80dp"
+        app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -555,6 +557,7 @@
         android:id="@+id/news_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
         android:text="What's news"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -562,7 +565,8 @@
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/scrollview"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <HorizontalScrollView
         android:id="@+id/scrollview2"
